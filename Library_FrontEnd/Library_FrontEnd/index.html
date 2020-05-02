@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Library</title>
+	<link href="https://kendo.cdn.telerik.com/2019.3.917/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/2019.3.917/styles/kendo.default.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<div class="header"></div>
+
+	<div class="container body-content">
+		<div class="container mt-5">
+			<h2>借書系統</h2>
+
+			<form id="SearchForm">
+				<ul class="fieldlist">
+					<li>
+						<label class="col-md-2" for="BookName">書名</label>
+						<input class="form-control" style="width:40%" id="BookName" name="BookName" type="text" @*value="" *@ />
+					</li>
+					<li>
+						<label class="col-md-2 " for="BookClassId">圖書類別</label>
+						<select id="BookClassId" name="BookClassId"></select>
+					</li>
+
+					<li>
+						<label class="col-md-2" for="BookKeeperId">借閱人</label>
+						<select id="BookKeeperId" name="BookKeeperId"></select>
+					</li>
+					<li>
+						<label class="col-md-2" for="BookStatusId">借閱狀態</label>
+						<select id="BookStatusId" name="BookStatusId"></select>
+					</li>
+				</ul>
+				<button type="button" class="btn btn-dark" id="search-btn">查詢</button>
+				<button type="button" class="btn btn-dark" id="clear-btn">清除</button>
+				<a href="InsertBook.html" class="btn btn-dark" role="button" id="insert-btn">新增</a>
+			</form>
+		</div>
+		<div id="tbcontainer" class="tb mt-4">
+		</div>
+		<hr />
+		<footer>
+			<p >&copy; </p>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/2019.3.917/js/kendo.all.min.js"></script>
+	<script type="text/javascript" src="Scripts/index.js"></script>
+</body>
+
+</html>
+
