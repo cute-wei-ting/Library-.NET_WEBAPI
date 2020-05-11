@@ -1,4 +1,5 @@
-﻿var ServerPreaddress = "https://localhost:44332/api"
+﻿var ServerPreaddress = "https://localhost:44332/api";
+
 $(document).ready(function () {
 
 	var Today = new Date();
@@ -41,7 +42,8 @@ $(document).ready(function () {
 					BookClass: $("#BookClassId").data("kendoDropDownList").value()
 				}),
 				contentType: "application/json",
-				dataType:"json",
+				//dataType:"json",
+				//json回傳void會出錯
 				success: function (response) {
 					alert("新增成功");
 					var address = "Index.html";

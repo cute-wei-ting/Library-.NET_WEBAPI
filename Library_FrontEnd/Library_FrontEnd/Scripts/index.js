@@ -1,4 +1,5 @@
 ﻿var ServerPreaddress = "https://localhost:44332/api";
+
 $(document).ready(function () {
 	var Today = new Date();
 	$(".header").load("./header.html");
@@ -179,7 +180,7 @@ function deleteBook(e) {
 			//data: { "": dataItem.BookID },
 			data: dataItem.BookID,
 			contentType: "application/json",
-			dataType:"json",
+			dataType:"text",
 			success: function (response) {
 				$("#tbcontainer").data("kendoGrid").dataSource.read();
 				alert(response);

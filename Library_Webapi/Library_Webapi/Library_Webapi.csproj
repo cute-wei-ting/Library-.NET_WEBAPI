@@ -114,7 +114,6 @@
     <Compile Include="Models\BookInsert.cs" />
     <Compile Include="Models\BookRecord.cs" />
     <Compile Include="Models\BookSearch.cs" />
-    <Compile Include="Models\BookService.cs" />
     <Compile Include="Models\BookUpdate.cs" />
     <Compile Include="Models\CustomSelectListItem.cs" />
     <Compile Include="Models\LendRecordInsert.cs" />

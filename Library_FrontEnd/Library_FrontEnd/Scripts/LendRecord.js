@@ -1,4 +1,5 @@
 ﻿var ServerPreaddress = "https://localhost:44332/api";
+
 $(document).ready(function () {
 
 	var Today = new Date();

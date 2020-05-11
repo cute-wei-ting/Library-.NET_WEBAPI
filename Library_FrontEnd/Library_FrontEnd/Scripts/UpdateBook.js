@@ -1,4 +1,5 @@
 ﻿var ServerPreaddress = "https://localhost:44332/api";
+
 $(document).ready(function () {
 
 	var Today = new Date();
@@ -97,9 +98,11 @@ $(document).ready(function () {
 					BookKeeperId: $("#BookKeeperId").data("kendoDropDownList").value()
 				}),
 				contentType: "application/json",
-				dataType: "json",
+				dataType: "text",//純文字
 				success: function (data) {
 					alert(data);
+				}, error: function (error) {
+					alert("系統發生錯誤");
 				}
 			});
 		}
@@ -114,9 +117,9 @@ $(document).ready(function () {
 			$.ajax({
 				type: "POST",
 				url: ServerPreaddress + "/Book/DeleteBook",
-				data: id ,
+				data: id,
 				contentType: "application/json",
-				dataType: "json",
+				dataType: "text",
 				success: function (response) {
 					alert(response);
 					var address = "Index.html";
@@ -126,7 +129,8 @@ $(document).ready(function () {
 				}
 			});
 		}
-	});
+	});//data:{"":id}   contentType:www-urlform
+
 	$("#BookStatusId").change(bookstatus);
 });
 

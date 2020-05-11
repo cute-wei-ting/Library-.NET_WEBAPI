@@ -1,4 +1,5 @@
-﻿var ServerPreaddress = "https://localhost:44332/api"
+﻿var ServerPreaddress = "https://localhost:44332/api";
+
 $(document).ready(function () {
 	var Today = new Date();
 	$(".header").load("./header.html");
@@ -42,11 +43,11 @@ $(document).ready(function () {
 				{ field: "BookAuthor", title: "作者", width: "15%", headerAttributes: { style: "text-align: center" } },
 				{ field: "BookPublisher", title: "出版商", width: "30%", headerAttributes: { style: "text-align: center" } },
 				{ field: "Note", title: "內容簡介", width: "20%", headerAttributes: { style: "text-align: center" } },
-				{ field: "BoughtDate", title: "購書日期", width: "20%", headerAttributes: { style: "text-align: center" } },
+				{ field: "BoughtDate", title: "購書日期", width: "25%", headerAttributes: { style: "text-align: center" } },
 				{ field: "BookClassId", title: "圖書類別", width: "35%", headerAttributes: { style: "text-align: center" } },
 				{ field: "BookStatusId", title: "借閱狀態", width: "20%", headerAttributes: { style: "text-align: center" } },
 				{ field: "BookKeeperId", title: "借閱人", width: "25%", headerAttributes: { style: "text-align: center" } },
-				{ command: { text: "編輯", click: ModifyBook }, title: "", width: "120px", headerAttributes: { style: "text-align: center" } }
+				{ command: { text: "編輯", click: ModifyBook }, title: "", width: "100px", headerAttributes: { style: "text-align: center" } }
 			],
 		});
 });
